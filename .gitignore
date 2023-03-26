@@ -9,3 +9,6 @@ lora-**
 *ckpt
 wandb
 .idea
+evaluate.py
+test_data.json
+todo.txt
