@@ -5,14 +5,14 @@ import os
 def load_json_from_file(file_name):
     try:
         with open(file_name, 'r', encoding='utf-8') as file:
-            data = json.load(file)
+            ds = json.load(file)
     except Exception:
         with open(file_name, 'r', encoding='utf-8') as file:
             ds = []
             data = file.readlines()
             for text in data:
                 ds.append(eval(text))
-    return data
+    return ds
 
 
 def convert_to_target_format(data):
